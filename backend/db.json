@@ -31,7 +31,7 @@
     {
       "id": 6,
       "descricao": "Ler",
-      "statusFinalizado": false,
+      "statusFinalizado": true,
       "categoria": "Estudos",
       "prioridade": "Alta"
     }
