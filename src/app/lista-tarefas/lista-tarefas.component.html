@@ -3,6 +3,7 @@
     <button (click)="mostrarOuEsconderFormulario()">Criar nova tarefa</button>
   </div>
   <form
+    @shownState
     class="formulario ff-prompt"
     [formGroup]="formulario"
     *ngIf="formAberto"
