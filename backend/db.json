@@ -34,6 +34,27 @@
       "statusFinalizado": true,
       "categoria": "Estudos",
       "prioridade": "Alta"
+    },
+    {
+      "id": 7,
+      "descricao": "Preencher kanban",
+      "statusFinalizado": false,
+      "categoria": "Trabalho",
+      "prioridade": "Alta"
+    },
+    {
+      "id": 8,
+      "descricao": "Preencher card da tarefa",
+      "statusFinalizado": true,
+      "categoria": "Trabalho",
+      "prioridade": "Normal"
+    },
+    {
+      "id": 9,
+      "descricao": "Ler um livro",
+      "statusFinalizado": false,
+      "categoria": "Estudos",
+      "prioridade": "Normal"
     }
   ]
 }
