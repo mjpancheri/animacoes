@@ -79,7 +79,7 @@
       (keyup)="filtrarTarefasPorDescricao()"
     />
   </div>
-  <div *ngIf="listaTarefas.length > 0; else semTarefas">
+  <div @listState *ngIf="listaTarefas.length > 0; else semTarefas">
     <div
       class="lista-tarefas card-{{ tarefa.categoria }}"
       *ngFor="let tarefa of listaTarefas; let i = index"
