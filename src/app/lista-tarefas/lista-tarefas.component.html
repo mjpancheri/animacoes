@@ -3,8 +3,9 @@
     <button (click)="mostrarOuEsconderFormulario()">Criar nova tarefa</button>
   </div>
   <form
-    [@formButton]="formulario.valid ? 'valid' : 'invalid'"
     @shownState
+    [@shakeAnimation]="formulario.value"
+    [@formButton]="formulario.valid ? 'valid' : 'invalid'"
     class="formulario ff-prompt"
     [formGroup]="formulario"
     *ngIf="formAberto"
