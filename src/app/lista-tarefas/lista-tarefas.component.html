@@ -105,8 +105,10 @@
                 ? 'icone-checked'
                 : 'icone-unchecked'
             "
-            (click)="finalizarTarefa(tarefa.id)"
-            [@checkButton]="tarefa.id === id ? 'checked' : 'unchecked'"
+            (click)="finalizarTarefa(tarefa)"
+            [@checkButton]="
+              tarefa.id === id && estadoBotao ? 'checked' : 'unchecked'
+            "
           ></button>
         </p>
       </div>
@@ -121,7 +123,7 @@
           <button class="botao-editar" (click)="carregarParaEditar(tarefa.id)">
             <img src="assets/icones/icone-editar.png" alt="Ícone de editar" />
           </button>
-          <button (click)="excluirTarefa(tarefa.id)" class="botao-deletar">
+          <button (click)="excluirTarefa(tarefa)" class="botao-deletar">
             <img src="assets/icones/icone-excluir.png" alt="Ícone de excluir" />
           </button>
         </div>

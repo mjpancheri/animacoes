@@ -45,23 +45,30 @@
     {
       "id": 8,
       "descricao": "Preencher card da tarefa",
-      "statusFinalizado": true,
+      "statusFinalizado": false,
       "categoria": "Trabalho",
       "prioridade": "Normal"
     },
     {
       "id": 9,
       "descricao": "Ler um livro",
-      "statusFinalizado": false,
+      "statusFinalizado": true,
       "categoria": "Estudos",
       "prioridade": "Normal"
     },
     {
-      "id": 10,
-      "descricao": "Ir ao mercado",
-      "statusFinalizado": false,
-      "categoria": "Casa",
+      "id": 11,
+      "descricao": "Teste refatoração",
+      "statusFinalizado": true,
+      "categoria": "Trabalho",
       "prioridade": "Normal"
+    },
+    {
+      "id": 12,
+      "descricao": "Aprender mais Angular",
+      "categoria": "Trabalho",
+      "statusFinalizado": false,
+      "prioridade": "Alta"
     }
   ]
 }
