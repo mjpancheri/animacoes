@@ -3,6 +3,7 @@
     <button (click)="mostrarOuEsconderFormulario()">Criar nova tarefa</button>
   </div>
   <form
+    [@formButton]="formulario.valid ? 'valid' : 'invalid'"
     @shownState
     class="formulario ff-prompt"
     [formGroup]="formulario"
@@ -128,5 +129,7 @@
   </div>
 </section>
 <ng-template #semTarefas>
-  <p class="ng-template ff-prompt">Olá! Ainda não há tarefas por aqui! :)</p>
+  <p @flyInOut class="ng-template ff-prompt">
+    Olá! Ainda não há tarefas por aqui! :)
+  </p>
 </ng-template>

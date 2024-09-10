@@ -55,6 +55,13 @@
       "statusFinalizado": false,
       "categoria": "Estudos",
       "prioridade": "Normal"
+    },
+    {
+      "id": 10,
+      "descricao": "Ir ao mercado",
+      "statusFinalizado": false,
+      "categoria": "Casa",
+      "prioridade": "Normal"
     }
   ]
 }

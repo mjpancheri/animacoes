@@ -15,6 +15,8 @@ import { filter } from 'rxjs';
 import {
   checkButtonTrigger,
   filterTrigger,
+  flyInOutTrigger,
+  formButtonTrigger,
   highlightedStateTrigger,
   shownStateTrigger,
 } from '../animations';
@@ -28,6 +30,8 @@ import {
     shownStateTrigger,
     checkButtonTrigger,
     filterTrigger,
+    formButtonTrigger,
+    flyInOutTrigger,
   ],
 })
 export class ListaTarefasComponent implements OnInit {
@@ -65,10 +69,9 @@ export class ListaTarefasComponent implements OnInit {
   filtrarTarefasPorDescricao() {
     this.campoBusca = this.campoBusca.trim().toLowerCase();
     if (this.campoBusca && this.campoBusca.length > 2) {
-      let tarefasFiltradas = this.listaTarefas.filter((tarefa) =>
+      this.listaTarefas = this.listaTarefasOriginal.filter((tarefa) =>
         tarefa.descricao.toLowerCase().includes(this.campoBusca)
       );
-      this.listaTarefas = tarefasFiltradas;
     } else {
       this.listaTarefas = this.listaTarefasOriginal;
     }
